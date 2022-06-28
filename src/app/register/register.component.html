@@ -1,0 +1,34 @@
+<div>
+  <form #regform="ngForm" (ngSubmit)="register(user)">
+  <p> Welcome to User Registration Module</p>
+  <div class="panel">
+    <div class="container">
+     
+      <div>
+      <label for="UserId"> Enter your user Id:</label>
+      <input type="text" id="UserId" name="UserId" #UserId [(ngModel)]="user.UserId" />
+      </div>
+     
+      <div>
+      <label for="UserName"> Enter your user Name:</label>
+      <input type="text" id="UserName" name="UserName" #UserName [(ngModel)]="user.UserName" />
+      </div>
+     
+      <div>
+      <label for="Email"> Enter your user Email:</label>
+      <input type="email" id="Email" name="Email" #Email [(ngModel)]="user.Email" />
+      </div>
+     
+      <div>
+      <label for="password"> Enter your user Password:</label>
+      <input type="password" id="password" name="password" #password [(ngModel)]="user.password" />
+      </div>
+     
+      <div>
+       <input type="submit" value="Register"/>
+     </div>
+    </div>
+  </div>
+  </form>
+</div>
+<hr/>
